@@ -1,24 +1,185 @@
-
-langchain = "*"
-pandas = "*"
-python-dotenv = "*"
-openai = "*"
-langchain-openai = "*"
-langchain-google-genai = "*"
-langchain-chroma = "*"
-langchain-community = "*"
-langsmith = "*"
-jq = "*"
-streamlit = "*"
-faiss-cpu = "*"
-beautifulsoup4 = "*"
-tiktoken = "*"
-pypdf = "*"
-pypdf2 = "*"
-datetime = "*"
-typing = "*"
-requests = "*"
-unstructured = "*"
-python-magic-bin = "==0.4.14"
-file-magic = "*"
-
+aiohappyeyeballs==2.4.0; python_version >= '3.8'
+aiohttp==3.10.5; python_version >= '3.8'
+aiosignal==1.3.1; python_version >= '3.7'
+altair==5.4.1; python_version >= '3.8'
+annotated-types==0.7.0; python_version >= '3.8'
+anyio==4.6.0; python_version >= '3.9'
+asgiref==3.8.1; python_version >= '3.8'
+attrs==24.2.0; python_version >= '3.7'
+backoff==2.2.1; python_version >= '3.7' and python_version < '4.0'
+bcrypt==4.2.0; python_version >= '3.7'
+beautifulsoup4==4.12.3; python_full_version >= '3.6.0'
+blinker==1.8.2; python_version >= '3.8'
+build==1.2.2; python_version >= '3.8'
+cachetools==5.5.0; python_version >= '3.7'
+certifi==2024.8.30; python_version >= '3.6'
+cffi==1.17.1; platform_python_implementation != 'PyPy'
+chardet==5.2.0; python_version >= '3.7'
+charset-normalizer==3.3.2; python_full_version >= '3.7.0'
+chroma-hnswlib==0.7.6
+chromadb==0.5.7; python_version >= '3.8'
+click==8.1.7; python_version >= '3.7'
+colorama==0.4.6; platform_system == 'Windows'
+coloredlogs==15.0.1; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
+cryptography==43.0.1; python_version >= '3.7'
+dataclasses-json==0.6.7; python_version >= '3.7' and python_version < '4.0'
+datetime==5.5; python_version >= '3.7'
+deepdiff==8.0.1; python_version >= '3.8'
+deprecated==1.2.14; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
+distro==1.9.0; python_version >= '3.6'
+durationpy==0.7
+emoji==2.13.0; python_version >= '3.7'
+faiss-cpu==1.8.0.post1; python_version >= '3.8'
+fastapi==0.115.0; python_version >= '3.8'
+file-magic==0.4.1; python_version >= '2.7'
+filelock==3.16.1; python_version >= '3.8'
+filetype==1.2.0
+flatbuffers==24.3.25
+frozenlist==1.4.1; python_version >= '3.8'
+fsspec==2024.9.0; python_version >= '3.8'
+gitdb==4.0.11; python_version >= '3.7'
+gitpython==3.1.43; python_version >= '3.7'
+google-ai-generativelanguage==0.6.6; python_version >= '3.7'
+google-api-core[grpc]==2.20.0; python_version >= '3.7'
+google-api-python-client==2.146.0; python_version >= '3.7'
+google-auth==2.35.0; python_version >= '3.7'
+google-auth-httplib2==0.2.0
+google-generativeai==0.7.2; python_version >= '3.9'
+googleapis-common-protos==1.65.0; python_version >= '3.7'
+greenlet==3.1.1; python_version < '3.13' and platform_machine == 'aarch64' or (platform_machine == 'ppc64le' or (platform_machine == 'x86_64' or (platform_machine == 'amd64' or (platform_machine == 'AMD64' or (platform_machine == 'win32' or platform_machine == 'WIN32')))))
+grpcio==1.66.1; python_version >= '3.8'
+grpcio-status==1.62.3
+h11==0.14.0; python_version >= '3.7'
+httpcore==1.0.5; python_version >= '3.8'
+httplib2==0.22.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
+httptools==0.6.1
+httpx==0.27.2; python_version >= '3.8'
+huggingface-hub==0.25.0; python_full_version >= '3.8.0'
+humanfriendly==10.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
+idna==3.10; python_version >= '3.6'
+importlib-metadata==8.4.0; python_version >= '3.8'
+importlib-resources==6.4.5; python_version >= '3.8'
+jinja2==3.1.4; python_version >= '3.7'
+jiter==0.5.0; python_version >= '3.8'
+joblib==1.4.2; python_version >= '3.8'
+jq==1.8.0; python_version >= '3.6'
+jsonpatch==1.33; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6'
+jsonpath-python==1.0.6; python_version >= '3.6'
+jsonpointer==3.0.0; python_version >= '3.7'
+jsonschema==4.23.0; python_version >= '3.8'
+jsonschema-specifications==2023.12.1; python_version >= '3.8'
+kubernetes==31.0.0; python_version >= '3.6'
+langchain==0.3.0; python_version >= '3.9' and python_version < '4.0'
+langchain-chroma==0.1.4; python_version < '4' and python_full_version >= '3.8.1'
+langchain-community==0.3.0; python_version >= '3.9' and python_version < '4.0'
+langchain-core==0.3.5; python_version >= '3.9' and python_version < '4.0'
+langchain-google-genai==2.0.0; python_version >= '3.9' and python_version < '4.0'
+langchain-openai==0.2.0; python_version >= '3.9' and python_version < '4.0'
+langchain-text-splitters==0.3.0; python_version >= '3.9' and python_version < '4.0'
+langdetect==1.0.9
+langsmith==0.1.125; python_version < '4.0' and python_full_version >= '3.8.1'
+lxml==5.3.0; python_version >= '3.6'
+markdown-it-py==3.0.0; python_version >= '3.8'
+markupsafe==2.1.5; python_version >= '3.7'
+marshmallow==3.22.0; python_version >= '3.8'
+mdurl==0.1.2; python_version >= '3.7'
+mmh3==5.0.0; python_version >= '3.8'
+monotonic==1.6
+mpmath==1.3.0
+multidict==6.1.0; python_version >= '3.8'
+mypy-extensions==1.0.0; python_version >= '3.5'
+narwhals==1.8.2; python_version >= '3.8'
+nest-asyncio==1.6.0; python_version >= '3.5'
+nltk==3.9.1; python_version >= '3.8'
+numpy==1.26.4; python_version >= '3.9'
+oauthlib==3.2.2; python_version >= '3.6'
+olefile==0.47; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
+onnxruntime==1.19.2
+openai==1.47.0; python_full_version >= '3.7.1'
+opentelemetry-api==1.27.0; python_version >= '3.8'
+opentelemetry-exporter-otlp-proto-common==1.27.0; python_version >= '3.8'
+opentelemetry-exporter-otlp-proto-grpc==1.27.0; python_version >= '3.8'
+opentelemetry-instrumentation==0.48b0; python_version >= '3.8'
+opentelemetry-instrumentation-asgi==0.48b0; python_version >= '3.8'
+opentelemetry-instrumentation-fastapi==0.48b0; python_version >= '3.8'
+opentelemetry-proto==1.27.0; python_version >= '3.8'
+opentelemetry-sdk==1.27.0; python_version >= '3.8'
+opentelemetry-semantic-conventions==0.48b0; python_version >= '3.8'
+opentelemetry-util-http==0.48b0; python_version >= '3.8'
+orderly-set==5.2.2; python_version >= '3.8'
+orjson==3.10.7; python_version >= '3.8'
+overrides==7.7.0; python_version >= '3.6'
+packaging==24.1; python_version >= '3.8'
+pandas==2.2.3; python_version >= '3.9'
+pillow==10.4.0; python_version >= '3.8'
+posthog==3.6.6
+proto-plus==1.24.0; python_version >= '3.7'
+protobuf==4.25.5; python_version >= '3.8'
+psutil==6.0.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
+pyarrow==17.0.0; python_version >= '3.8'
+pyasn1==0.6.1; python_version >= '3.8'
+pyasn1-modules==0.4.1; python_version >= '3.8'
+pycparser==2.22; python_version >= '3.8'
+pydantic==2.9.2; python_version >= '3.8'
+pydantic-core==2.23.4; python_version >= '3.8'
+pydantic-settings==2.5.2; python_version >= '3.8'
+pydeck==0.9.1; python_version >= '3.8'
+pygments==2.18.0; python_version >= '3.8'
+pyparsing==3.1.4; python_version >= '3.1'
+pypdf==5.0.0; python_version >= '3.6'
+pypdf2==3.0.1; python_version >= '3.6'
+pypika==0.48.9
+pyproject-hooks==1.1.0; python_version >= '3.7'
+pyreadline3==3.5.4; python_version >= '3.8' and sys_platform == 'win32'
+python-dateutil==2.9.0.post0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
+python-dotenv==1.0.1; python_version >= '3.8'
+python-iso639==2024.4.27; python_version >= '3.8'
+python-magic==0.4.27; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
+python-magic-bin==0.4.14
+python-oxmsg==0.0.1; python_version >= '3.9'
+pytz==2024.2
+pyyaml==6.0.2; python_version >= '3.8'
+rapidfuzz==3.9.7; python_version >= '3.8'
+referencing==0.35.1; python_version >= '3.8'
+regex==2024.9.11; python_version >= '3.8'
+requests==2.32.3; python_version >= '3.8'
+requests-oauthlib==2.0.0; python_version >= '3.4'
+requests-toolbelt==1.0.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
+rich==13.8.1; python_full_version >= '3.7.0'
+rpds-py==0.20.0; python_version >= '3.8'
+rsa==4.9; python_version >= '3.6' and python_version < '4'
+setuptools==75.1.0; python_version >= '3.8'
+shellingham==1.5.4; python_version >= '3.7'
+six==1.16.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
+smmap==5.0.1; python_version >= '3.7'
+sniffio==1.3.1; python_version >= '3.7'
+soupsieve==2.6; python_version >= '3.8'
+sqlalchemy==2.0.35; python_version >= '3.7'
+starlette==0.38.5; python_version >= '3.8'
+streamlit==1.38.0; python_version >= '3.8' and python_full_version != '3.9.7'
+sympy==1.13.3; python_version >= '3.8'
+tabulate==0.9.0; python_version >= '3.7'
+tenacity==8.5.0; python_version >= '3.8'
+tiktoken==0.7.0; python_version >= '3.8'
+tokenizers==0.20.0; python_version >= '3.7'
+toml==0.10.2; python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'
+tornado==6.4.1; python_version >= '3.8'
+tqdm==4.66.5; python_version >= '3.7'
+typer==0.12.5; python_version >= '3.7'
+typing==3.7.4.3; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
+typing-extensions==4.12.2; python_version >= '3.8'
+typing-inspect==0.9.0
+tzdata==2024.1; python_version >= '2'
+unstructured==0.15.13; python_version < '3.13' and python_full_version >= '3.9.0'
+unstructured-client==0.25.9; python_version >= '3.8'
+uritemplate==4.1.1; python_version >= '3.6'
+urllib3==2.2.3; python_version >= '3.8'
+uvicorn[standard]==0.30.6; python_version >= '3.8'
+watchdog==4.0.2; platform_system != 'Darwin'
+watchfiles==0.24.0
+websocket-client==1.8.0; python_version >= '3.8'
+websockets==13.1
+wrapt==1.16.0; python_version >= '3.6'
+yarl==1.11.1; python_version >= '3.8'
+zipp==3.20.2; python_version >= '3.8'
+zope.interface==7.0.3; python_version >= '3.8'
